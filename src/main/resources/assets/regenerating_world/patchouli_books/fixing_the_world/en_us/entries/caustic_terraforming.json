@@ -1,0 +1,32 @@
+{
+  "name": "Caustic Terraforming",
+  "icon": "minecraft:gunpowder",
+  "category": "regenerating_world:getting_started",
+  "sortnum": 11,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "regenerating_world:appular_cider_acid_liquid_bucket",
+      "title": "Cider Acid",
+      "text" : "Composite mesh and apples compact together very well, mixing to create an acidic apple liquid. Maybe don't drink this cider!"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "minecraft:gunpowder",
+      "title": "Acidic Powder",
+      "text" : "Covering amber clumps with your new appular cider creates apple flavored gunpowder! $(br)Packs a punch still."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "minecraft:tnt",
+      "title": "TNT",
+      "text" : "While its unknown if the TNT is still apple flavored, it is substantially better than your standard TNT! $(br)All blocks exploded will drop and it has a much more uniform and controlled explosion radius"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "regenerating_world:fire_charge",
+      "title": "Fire Charge",
+      "text" : "A recipe for a basic firestarter. I should also say, you don't even need to make fire charges for lighting TNT, you could just use buttons. But fire is available anyways."
+    }
+  ]
+}

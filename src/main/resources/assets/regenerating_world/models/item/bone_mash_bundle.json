@@ -1,0 +1,7 @@
+
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "regenerating_world:item/bone_mash_bundle"
+  }
+}

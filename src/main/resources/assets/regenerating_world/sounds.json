@@ -1,0 +1,74 @@
+{
+  "huge_impact": {
+    "sounds": [
+      { "name": "regenerating_world:huge_impact", "stream": false }
+    ],
+    "subtitle": "subtitles.regenerating_world.huge_impact"
+  },
+  "ambient_wind": {
+    "sounds": [
+      { "name": "regenerating_world:strong_wind", "stream": true }
+    ],
+    "subtitle": "subtitles.regenerating_world.ambient_wind"
+  },
+  "reverb_break": {
+    "sounds": [
+      { "name": "regenerating_world:reverb_break", "stream": false }
+    ],
+    "subtitle": "subtitles.regenerating_world.reverb_break"
+  },
+  "mystery_arp": {
+    "sounds": [
+      { "name": "regenerating_world:mystery_arp", "stream": false }
+    ],
+    "subtitle": "subtitles.regenerating_world.mystery_arp"
+  },
+  "must_send_data_1": {
+    "sounds": [
+      { "name": "regenerating_world:must_send_data_1", "stream": false }
+    ],
+    "subtitle": "subtitles.regenerating_world.must_send_data"
+  },
+  "must_send_data_2": {
+    "sounds": [
+      { "name": "regenerating_world:must_send_data_2", "stream": false }
+    ],
+    "subtitle": "subtitles.regenerating_world.must_send_data"
+  },
+  "must_send_data_3": {
+    "sounds": [
+      { "name": "regenerating_world:must_send_data_3", "stream": false }
+    ],
+    "subtitle": "subtitles.regenerating_world.must_send_data"
+  },
+  "must_send_data_4": {
+    "sounds": [
+      { "name": "regenerating_world:must_send_data_4", "stream": false }
+    ],
+    "subtitle": "subtitles.regenerating_world.must_send_data"
+  },
+  "must_send_data_5": {
+    "sounds": [
+      { "name": "regenerating_world:must_send_data_5", "stream": false }
+    ],
+    "subtitle": "subtitles.regenerating_world.must_send_data"
+  },
+  "must_send_data_6": {
+    "sounds": [
+      { "name": "regenerating_world:must_send_data_6", "stream": false }
+    ],
+    "subtitle": "subtitles.regenerating_world.must_send_data"
+  },
+  "metal_reverb_1": {
+    "sounds": [
+      { "name": "regenerating_world:metal_reverb_1", "stream": false }
+    ],
+    "subtitle": "subtitles.regenerating_world.metal_reverb_1"
+  },
+  "metal_reverb_2": {
+    "sounds": [
+      { "name": "regenerating_world:metal_reverb_2", "stream": false }
+    ],
+    "subtitle": "subtitles.regenerating_world.metal_reverb_2"
+  }
+}

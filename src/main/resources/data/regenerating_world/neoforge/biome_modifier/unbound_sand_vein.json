@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "#regenerating_world:is_unbound",
+  "features": "regenerating_world:unbound_sand_vein",
+  "step": "underground_ores"
+}

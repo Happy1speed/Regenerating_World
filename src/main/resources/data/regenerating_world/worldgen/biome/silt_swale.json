@@ -1,0 +1,67 @@
+{
+  "carvers": {
+    "air": [
+      "minecraft:cave",
+      "minecraft:cave_extra_underground",
+      "minecraft:canyon"
+    ]
+  },
+  "downfall": 2.0,
+  "effects": {
+    "fog_color": 12638463,
+    "foliage_color": 9285927,
+    "grass_color_modifier": "swamp",
+    "mood_sound": {
+      "block_search_extent": 8,
+      "offset": 2,
+      "sound": "minecraft:ambient.cave",
+      "tick_delay": 6000
+    },
+    "music": {
+      "max_delay": 24000,
+      "min_delay": 12000,
+      "replace_current_music": false,
+      "sound": "minecraft:music.under_water"
+    },
+    "sky_color": 7907327,
+    "water_color": 5030565,
+    "water_fog_color": 4370031
+  },
+  "features": [
+    [],
+    [
+      "minecraft:lake_lava_underground",
+      "minecraft:lake_lava_surface"
+    ],
+    [
+      "minecraft:amethyst_geode"
+    ],
+    [
+      "minecraft:fossil_upper"
+    ],
+    [],
+    [],
+    [
+      "minecraft:ore_andesite_upper",
+      "minecraft:ore_andesite_lower",
+      "minecraft:ore_coal_upper",
+      "minecraft:ore_coal_lower",
+      "minecraft:ore_copper",
+      "minecraft:underwater_magma",
+      "minecraft:disk_grass",
+      "minecraft:disk_clay"
+    ],
+    [],
+    [
+      "minecraft:spring_water"
+    ],
+    [],
+    [
+      "minecraft:freeze_top_layer"
+    ]
+  ],
+  "has_precipitation": true,
+  "spawn_costs": {},
+  "spawners": {},
+  "temperature": 0.9
+}

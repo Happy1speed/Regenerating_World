@@ -1,0 +1,16 @@
+{
+  "name": "Basic Cob Gen",
+  "icon": "minecraft:cobblestone",
+  "category": "regenerating_world:getting_started",
+  "sortnum": 9,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text" : "Compacting magma blocks will get you a small amount of lava. $(br)Pumping water into the basin will generate cobblestone, consuming the water but keeping the lava."
+    },
+    {
+      "type": "patchouli:text",
+      "text" : "This will allow for infinite cobblestone generation, although it is quite slow right now. Maybe we can speed this up later. If you're wondering where magma blocks come from, they are found in water caves."
+    }
+  ]
+}

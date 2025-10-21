@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "regenerating_world:item/hardened_amber_boots"
+  }
+}

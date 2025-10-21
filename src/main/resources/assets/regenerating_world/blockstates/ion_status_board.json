@@ -1,0 +1,27 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "regenerating_world:block/ion_status_board"
+      },
+      {
+        "model": "regenerating_world:block/ion_status_board",
+        "y": 90,
+        "z": 90,
+        "x": 180
+      },
+      {
+        "model": "regenerating_world:block/ion_status_board",
+        "y": 180,
+        "z": 180,
+        "x": 270
+      },
+      {
+        "model": "regenerating_world:block/ion_status_board",
+        "y": 270,
+        "z": 270,
+        "x": 90
+      }
+    ]
+  }
+}

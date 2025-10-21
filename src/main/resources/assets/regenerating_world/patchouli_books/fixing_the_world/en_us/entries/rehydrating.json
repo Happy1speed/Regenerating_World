@@ -1,0 +1,20 @@
+{
+  "name": "Rehydrating",
+  "icon": "regenerating_world:dry_sugar_cane",
+  "category": "regenerating_world:getting_started",
+  "sortnum": 7,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "regenerating_world:dry_sugar_cane,regenerating_world:dry_wheat_seeds,minecraft:dried_kelp",
+      "title": "Rehydrating Dry Plants",
+      "text" : "Milling clay balls can provide a few different dry items that can be filled with water with a spout to rehydrate them! $(br2)Note that this takes a lot of time and water."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "minecraft:sugar_cane,minecraft:wheat_seeds,minecraft:kelp",
+      "title": "Rehydrated Plants",
+      "text" : "After obtaining sugar cane, kelp and wheat seeds, you now have some more farm-able resources. $(br)Upon successfully rehydrating wheat seeds, you will unlock the ability to bonemeal grass blocks."
+    }
+  ]
+}

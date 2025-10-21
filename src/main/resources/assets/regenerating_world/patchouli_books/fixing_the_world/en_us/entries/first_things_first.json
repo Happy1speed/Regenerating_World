@@ -1,0 +1,65 @@
+{
+  "name": "First Things First",
+  "icon": "minecraft:suspicious_sand",
+  "category": "regenerating_world:getting_started",
+  "sortnum": 0,
+  "pages": [
+
+    {
+      "type": "patchouli:text",
+      "text": "First locate some suspicious sand and break it with your hands. $(br)These contain some basic items. $(br)Collect a good amount of everything. $(br)They usually generate in weathered sand clumps."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": {
+        "item": "minecraft:suspicious_sand"
+      },
+      "title": "Suspicious Sand",
+      "text": "Find these."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "regenerating_world:oak_seed,regenerating_world:spruce_seed",
+      "title": "Basic Tree Seeds",
+      "text": "Make sure you get both oak and spruce! Both have unique uses."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": {
+        "item": "minecraft:cobblestone"
+      },
+      "title": "Cobblestone",
+      "text": "You can also get cobblestone from Suspicious Sand breaking."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": {
+        "item": "minecraft:bone_block"
+      },
+      "title": "Bone Block",
+      "text": "Bonemeal will be useful, obviously"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": {
+        "item": "minecraft:stick"
+      },
+      "title": "Sticks",
+      "text": "Looks like punching a block to get wood isn't out of the question"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": {
+        "item": "minecraft:clay_ball"
+      },
+      "title": "Clay Ball",
+      "text": "An abundant and easily moldable material"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "regenerating_world:origin_point",
+      "title": "Origin Point",
+      "text": "This block sets World Spawn to where you place it. $(br)I highly recommended to obtain one of these and place it somewhere safe and out of the rain!"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "regenerating_world:block/weathered_sandstone"
+      },
+      {
+        "model": "regenerating_world:block/weathered_sandstone",
+        "y": 90
+      },
+      {
+        "model": "regenerating_world:block/weathered_sandstone",
+        "y": 180
+      },
+      {
+        "model": "regenerating_world:block/weathered_sandstone",
+        "y": 270
+      }
+    ]
+  }
+}

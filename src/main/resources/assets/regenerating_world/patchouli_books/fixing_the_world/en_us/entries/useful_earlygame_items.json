@@ -1,0 +1,54 @@
+{
+  "name": "Basic Gadgets",
+  "icon": "regenerating_world:vault_pole",
+  "category": "regenerating_world:getting_started",
+  "sortnum": 8,
+  "pages": [
+    {
+      "type": "patchouli:crafting",
+      "recipe": "regenerating_world:vault_pole",
+      "title": "Vault Pole",
+      "text" : "The vault pole is a mobility item that lets you vault forward when on or very close to the ground. $(br2) It also lets you fall from a higher height without taking damage."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "regenerating_world:composite_mesh",
+      "title": "Composite Mesh",
+      "text" : "Compacting paper, wheat and spruce sap gets you composite mesh, which is useful in a few recipes later."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "regenerating_world:sponge",
+      "title": "Sponge",
+      "text" : "Using composite mesh and dried kelp, you can craft sponges. Very useful for mopping up water and draining submerged caves."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "create:crafting/appliances/copper_diving_boots",
+      "text" : "Diving boots let you sink quicker underwater while loosing the ability to swim."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "create:crafting/appliances/copper_diving_helmet",
+      "text" : "The diving helmet lets you break blocks underwater at a faster rate and increases underwater vision."
+    },
+    {
+
+      "type": "patchouli:crafting",
+      "recipe": "create:crafting/appliances/copper_backtank",
+      "text" : "A Backtank can be equipped to allow breathing underwater. User must also wear a copper diving helmet. $(br)Must be filled with air by receiving rotation while placed down."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "regenerating_world:sea_lantern_magma",
+      "title": "Sea Lanterns",
+      "text" : "Underwater caves can be dark and need lighting. In case you're wondering, submerged caves can have magma blocks in them."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "regenerating_world:cheaper_lantern",
+      "title": "Cheaper Lanterns",
+      "text" : "Lanterns are much cheaper to make now."
+    }
+  ]
+}

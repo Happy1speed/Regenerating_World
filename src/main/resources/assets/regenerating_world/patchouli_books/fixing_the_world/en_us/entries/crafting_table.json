@@ -1,0 +1,17 @@
+{
+  "name": "Crafting Table",
+  "icon": "minecraft:crafting_table",
+  "category": "regenerating_world:getting_started",
+  "sortnum": 1,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "After finding sticks, you can craft them into your trusty crafting bench!"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "minecraft:crafting_table",
+      "title": "New Crafting Table"
+    }
+  ]
+}

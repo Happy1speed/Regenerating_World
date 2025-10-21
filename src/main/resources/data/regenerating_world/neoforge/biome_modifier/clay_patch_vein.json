@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "#regenerating_world:is_biome",
+  "features": "regenerating_world:clay_patch_vein",
+  "step": "underground_ores"
+}

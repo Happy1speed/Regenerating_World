@@ -1,0 +1,9 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "regenerating_world:block/simple_grow_light"
+      }
+    ]
+  }
+}

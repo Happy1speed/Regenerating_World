@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "regenerating_world:tungsten_ingot"
+    },
+    "I": {
+      "item": "minecraft:torch"
+    }
+  },
+  "pattern": [
+    " # ",
+    "#I#",
+    " # "
+  ],
+  "result": {
+    "count": 32,
+    "id": "minecraft:lantern"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "regenerating_world:parched_lands",
+    "regenerating_world:wet_caves",
+    "regenerating_world:dry_caves"
+  ]
+}

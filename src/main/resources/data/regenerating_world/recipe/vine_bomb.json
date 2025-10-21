@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:moss_block"
+    },
+    {
+      "item": "regenerating_world:swamp_oak_sapling"
+    }
+  ],
+  "result": {
+    "count": 12,
+    "id": "regenerating_world:vine_bomb"
+  }
+}

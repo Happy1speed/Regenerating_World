@@ -1,0 +1,27 @@
+{
+  "name": "Rain Proofing 101",
+  "icon": "regenerating_world:tungsten",
+  "category": "regenerating_world:getting_started",
+  "sortnum": 6,
+  "pages": [
+
+    {
+      "type": "patchouli:spotlight",
+      "item": "regenerating_world:parched_dirt,regenerating_world:weathered_sand,regenerating_world:weathered_stone,regenerating_world:weathered_deepslate,regenerating_world:weathered_sandstone,minecraft:suspicious_sand",
+      "title": "Rain Erosion",
+      "text" : "As you probably figured out, rain erodes many blocks. $(br)Virtually all blocks naturally found on the surface of the world are immune. $(br)You haven't had any luck obtaining them though."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "regenerating_world:tungsten_ore",
+      "title": "Tungsten Mining",
+      "text" : "Tungsten is an ore that can only be mined by amber or better tier pickaxes."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "regenerating_world:tungsten,regenerating_world:ribbed_tungsten,regenerating_world:tungsten_glass",
+      "title" : "Tungsten Building Materials",
+      "text" : "Tungsten ingots can be crafted into a few different erosion proof blocks, which will surely help you in making safe growing environments for your plants."
+    }
+  ]
+}

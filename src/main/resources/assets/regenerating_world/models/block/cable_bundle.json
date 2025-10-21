@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "regenerating_world:block/cable_bundle_top",
+    "side": "regenerating_world:block/cable_bundle_side"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "#minecraft:is_overworld",
+  "features": "regenerating_world:disruptive_square",
+  "step": "raw_generation"
+}

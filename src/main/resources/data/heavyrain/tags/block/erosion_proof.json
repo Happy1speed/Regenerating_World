@@ -1,0 +1,25 @@
+{
+  "replace": true,
+  "values": [
+    "regenerating_world:weathered_sandstone",
+    "regenerating_world:weathered_stone",
+    "regenerating_world:parched_dirt",
+    "regenerating_world:weathered_sand",
+    "regenerating_world:weathered_deepslate",
+    "regenerating_world:weathered_stone_bricks",
+    "minecraft:water",
+    "minecraft:suspicious_sand",
+    "regenerating_world:tungsten",
+    "regenerating_world:ribbed_tungsten",
+    "regenerating_world:tungsten_glass",
+    "regenerating_world:brittlecrete",
+    "regenerating_world:brittlecrete_slab",
+    "regenerating_world:red_brittlecrete",
+    "regenerating_world:shearmetal_block",
+    "regenerating_world:smooth_shearmetal_block",
+    "regenerating_world:carved_shearmetal_block",
+    "regenerating_world:worn_shearmetal_block",
+    "regenerating_world:torn_shearmetal_block",
+    "regenerating_world:shearmetal_grate"
+  ]
+}

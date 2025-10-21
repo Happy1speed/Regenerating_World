@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "I": {
+      "item": "minecraft:dried_kelp_block"
+    },
+    "#": {
+      "item": "regenerating_world:composite_mesh"
+    }
+  },
+  "pattern": [
+    "###",
+    "#I#",
+    "###"
+  ],
+  "result": {
+    "id": "minecraft:sponge"
+  }
+}

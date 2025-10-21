@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "#regenerating_world:is_land_biome_wo_desert",
+  "features": "regenerating_world:sand_vein",
+  "step": "underground_ores"
+}

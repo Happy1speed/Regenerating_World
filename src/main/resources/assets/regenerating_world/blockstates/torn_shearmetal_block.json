@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "facing=down":  { "model": "regenerating_world:block/torn_shearmetal_block", "x": 0,   "y": 0 },
+    "facing=up":    { "model": "regenerating_world:block/torn_shearmetal_block", "x": 180, "y": 0 },
+
+    "facing=north": { "model": "regenerating_world:block/torn_shearmetal_block", "x": 90, "y": 180 },
+    "facing=south": { "model": "regenerating_world:block/torn_shearmetal_block", "x": 90, "y": 0 },
+    "facing=west":  { "model": "regenerating_world:block/torn_shearmetal_block", "x": 90, "y": 90 },
+    "facing=east":  { "model": "regenerating_world:block/torn_shearmetal_block", "x": 90, "y": 270 }
+  }
+}
+
+

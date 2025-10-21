@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "minecraft:sugar_cane"
+    },
+    "S": {
+      "item": "minecraft:flint"
+    }
+  },
+  "pattern": [
+    "  #",
+    " # ",
+    "S  "
+  ],
+  "result": {
+    "id": "regenerating_world:vault_pole"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "What Happened Here?",
+  "icon": "regenerating_world:weathered_sand",
+  "category": "regenerating_world:world_state_info",
+  "sortnum": 2,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "I can't tell you that. $(br2)$(br2)That is to say... I have no clue what happened either! $(br)Are we before the world forms? Or are we after the world's end?"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Who knows?! $(br)Maybe nobody does. $(br)Either way, this place sure is a mess!"
+    }
+  ]
+}

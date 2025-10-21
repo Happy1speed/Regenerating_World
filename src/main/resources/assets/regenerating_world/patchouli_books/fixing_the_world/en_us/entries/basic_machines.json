@@ -1,0 +1,87 @@
+{
+  "name": "Basic machines",
+  "icon": "create:andesite_casing",
+  "category": "regenerating_world:getting_started",
+  "sortnum": 4,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "In order to progress, some machines must be made to process materials further. $(br) The two main ones being mechanical press and the mechanical mill"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "create:crafting/kinetics/water_wheel",
+      "text" : "The small water wheel is capable of generating some stress units as a basic power source."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "create:crafting/kinetics/large_water_wheel",
+      "text" : "The large water wheel is capable of generating more stress units at the cost of rotation speed."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "create:crafting/kinetics/millstone",
+      "text" : "These mill and grind basic materials."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "minecraft:gravel,minecraft:dirt",
+      "title": "Coarse Dirt Grinding",
+      "text" : "Millstone Recipe: Coarse dirt can be ground into dirt and sometimes gravel, providing a way to obtain flint."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "regenerating_world:dry_sugar_cane,minecraft:dried_kelp,regenerating_world:dry_wheat_seeds",
+      "title": "Clay Ball Refining",
+      "text" : "Millstone Recipe: A few different dry plant bits can be sifted out of clay balls."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "create:crafting/kinetics/cogwheel",
+      "recipe2": "create:crafting/kinetics/large_cogwheel"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "create:crafting/kinetics/shaft",
+      "recipe2": "create:crafting/materials/andesite_alloy"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "create:andesite_casing",
+      "title": "Andesite Casing",
+      "text" : "Use andesite alloy on a stripped log to craft."
+    },
+    {
+      "type": "patchouli:crafting",
+      "title" : "Gearboxes",
+      "recipe": "create:crafting/kinetics/gearbox",
+      "recipe2": "create:crafting/kinetics/vertical_gearbox_from_conversion",
+      "text" : "compact ways to redirect shafts."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "create:crafting/kinetics/belt_connector",
+      "text" : "move items around."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "create:crafting/logistics/andesite_funnel",
+      "text" : "put items in boxes and take them out."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "create:crafting/kinetics/mechanical_press",
+      "text" : "These press and compact."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "create:crafting/kinetics/basin",
+      "text" : "Holds items for compacting recipes."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "create:crafting/kinetics/depot",
+      "text" : "Holds items for various recipes."
+    }
+  ]
+}

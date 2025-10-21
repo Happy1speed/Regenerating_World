@@ -1,0 +1,5 @@
+{
+  "type": "minecraft:min",
+  "argument1": "regenerating_world:base_terrain_blend",
+  "argument2": "minecraft:overworld/caves/noodle"
+}

@@ -1,0 +1,43 @@
+{
+  "name": "Amber Synthesis",
+  "icon": "regenerating_world:amber_clump",
+  "category": "regenerating_world:getting_started",
+  "sortnum": 5,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Spruce logs can be drained to collect spruce sap, which can be used in making amber, a new material that will allow you to make a pickaxe strong enough to mine tungsten."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "create:crafting/kinetics/item_drain",
+      "text" : "Item drains can be used to drain fluid out of certain items."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "create:crafting/kinetics/fluid_pipe",
+      "recipe2": "create:crafting/kinetics/mechanical_pump"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "create:crafting/kinetics/spout",
+      "text" : "Spouts are used to fill items with liquids, the counterpart to item drains"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "create:crafting/kinetics/fluid_tank",
+      "text" : "Fluid tanks contain fluids, perfect for storing excess for later."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "regenerating_world:amber_clump",
+      "title": "Amber Clump",
+      "text" : "Spruce sap can be obtained by draining spruce logs. $(br) Compacting spruce sap in a basin with a mechanical press will yield Amber clumps."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "regenerating_world:amber_pickaxe",
+      "text" : "Now you can use amber clumps to make a new tool. $(br)Amber pickaxes can mine tungsten; a strong metal."
+    }
+  ]
+}

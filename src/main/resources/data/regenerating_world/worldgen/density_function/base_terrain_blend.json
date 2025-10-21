@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:squeeze",
+  "argument": {
+    "type": "minecraft:mul",
+    "argument1": 0.64,
+    "argument2": "regenerating_world:raw_terrain_blend"
+  }
+}

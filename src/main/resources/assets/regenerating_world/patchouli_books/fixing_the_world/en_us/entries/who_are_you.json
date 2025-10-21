@@ -1,0 +1,16 @@
+{
+  "name": "Who are you?",
+  "icon": "minecraft:written_book",
+  "category": "regenerating_world:world_state_info",
+  "sortnum": 0,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "My title is \"Fixing The World\" $(br)(patent pending)... $(br)but I prefer $(br)$(l)$(c)John Book$()."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "The most helpful book $(o)still$() in existence! $(br)$(o)I am also somehow made of sand?$() $(br)Regardless, I am here to give critical info about your adventure!"
+    }
+  ]
+}

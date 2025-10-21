@@ -1,0 +1,41 @@
+{
+  "name": "Sprouting Seeds",
+  "icon": "minecraft:oak_sapling",
+  "category": "regenerating_world:getting_started",
+  "sortnum": 3,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "The Oak and Spruce seeds are in a long term preservation state but can be awakened by combining them with some water."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "regenerating_world:oak_sapling_from_seed",
+      "recipe2": "regenerating_world:spruce_sapling_from_seed"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Now that we've got the life, lets cultivate it on dirt! $(br)Note that the extreme rain will destroy these! $(br)It is also worth noting that these trees don't grow without $(l)skylight$(), even with bonemeal! $(br)(The same rules apply to crops!)"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "You may be wondering how to get the dirt: just till coarse dirt with a hoe to get some!"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Now that you have grown trees, you can unlock their unique attributes and utilize them to their full potential!"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "minecraft:apple",
+      "title": "Oak Tree Uses",
+      "text" : "Apples are commonly dropped from oak trees and are a good source of food."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "minecraft:spruce_log",
+      "title": "Spruce Tree Uses",
+      "text" : "Spruce Logs can be processed into Spruce Sap!"
+    }
+  ]
+}

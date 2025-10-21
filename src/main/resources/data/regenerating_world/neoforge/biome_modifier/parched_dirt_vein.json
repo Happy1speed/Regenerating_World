@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "#regenerating_world:is_biome",
+  "features": "regenerating_world:parched_dirt_vein",
+  "step": "underground_ores"
+}

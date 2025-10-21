@@ -1,0 +1,21 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "regenerating_world:block/mineral_packed_mud"
+      },
+      {
+        "model": "regenerating_world:block/mineral_packed_mud",
+        "y": 90
+      },
+      {
+        "model": "regenerating_world:block/mineral_packed_mud",
+        "y": 180
+      },
+      {
+        "model": "regenerating_world:block/mineral_packed_mud",
+        "y": 270
+      }
+    ]
+  }
+}

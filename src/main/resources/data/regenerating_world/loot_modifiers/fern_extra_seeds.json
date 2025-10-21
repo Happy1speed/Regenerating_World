@@ -1,0 +1,12 @@
+{
+  "type": "regenerating_world:add_item",
+  "conditions": [
+    {
+      "block": "minecraft:large_fern",
+      "condition": "minecraft:block_state_property"
+    }
+  ],
+  "item": "minecraft:fern"
+}
+
+

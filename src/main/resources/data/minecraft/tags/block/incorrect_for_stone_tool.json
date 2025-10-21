@@ -1,0 +1,10 @@
+{
+  "replace" : false,
+  "values": [
+    "regenerating_world:tungsten",
+    "regenerating_world:ribbed_tungsten",
+    "regenerating_world:tungsten_glass",
+    "regenerating_world:tungsten_ore",
+    "regenerating_world:deepslate_tungsten_ore"
+  ]
+}

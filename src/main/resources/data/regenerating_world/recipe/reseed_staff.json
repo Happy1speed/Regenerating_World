@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "regenerating_world:bone_mash_bundle"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    },
+    "E": {
+      "item": "minecraft:wheat_seeds"
+    }
+  },
+  "pattern": [
+    "  #",
+    " E ",
+    "S  "
+  ],
+  "result": {
+    "id": "regenerating_world:reseed_staff"
+  }
+}

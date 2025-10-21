@@ -1,0 +1,20 @@
+{
+  "name": "Things are Different...",
+  "icon": "minecraft:dead_bush",
+  "category": "regenerating_world:world_state_info",
+  "sortnum": 3,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "You may be wondering what has changed. $(br) There is quite a lot, but I'll sum it up for ya. $(br)$(li)No trees and no good growing ground. $(br)$(li)The night doesn't bring hostiles but instead has deadly heavy rain. $(br)$(li)(The rain starts in a few days after your arrival) $(br)$(li)The mines lack certain metals like iron, diamonds, redstone and lapis."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(li)Rooting around in the sand can get you good items. $(br)$(li)Beds will set your spawn but not allow skipping the night. $(br)$(li)Remember that rain? It will eat most placed blocks away slowly, so be careful and maybe get a thick roof. $(br)$(li)The heavy rain starts at sundown so be in shelter by then! $(br)You have 3 days since spawning in before it starts."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Time and spawn location are especially important to you, so much that you have taken a mental note of them in your mind. Crouching/Sneaking will allow you to see the compass and clock clearly."
+    }
+  ]
+}

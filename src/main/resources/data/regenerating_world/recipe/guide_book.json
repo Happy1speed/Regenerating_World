@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "regenerating_world:sand_pile"
+    }
+  },
+  "pattern": [
+    " # ",
+    " # "
+  ],
+  "result": {
+    "count": 1,
+    "id": "patchouli:guide_book",
+    "nbt": {
+      "patchouli:book": "regenerating_world:fixing_the_world"
+    }
+  }
+}

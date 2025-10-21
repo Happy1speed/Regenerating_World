@@ -1,0 +1,26 @@
+{
+  "elements": [
+    {
+      "from": [0, 0, 8],
+      "to": [16, 16, 8],
+      "rotation": { "origin": [8, 8, 8], "axis": "y", "angle": 45 },
+      "faces": {
+        "north": { "texture": "#cross" },
+        "south": { "texture": "#cross" }
+      }
+    },
+    {
+      "from": [8, 0, 0],
+      "to": [8, 16, 16],
+      "rotation": { "origin": [8, 8, 8], "axis": "y", "angle": 45 },
+      "faces": {
+        "east": { "texture": "#cross" },
+        "west": { "texture": "#cross" }
+      }
+    }
+  ],
+  "textures": {
+    "cross": "regenerating_world:block/torn_shearmetal_block",
+    "particle" : "regenerating_world:block/torn_shearmetal_block"
+  }
+}

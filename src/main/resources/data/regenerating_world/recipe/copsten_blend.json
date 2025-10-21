@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "regenerating_world:raw_tungsten"
+    },
+    {
+      "item": "regenerating_world:raw_tungsten"
+    },
+    {
+      "item": "regenerating_world:raw_tungsten"
+    },
+    {
+      "item": "regenerating_world:raw_tungsten"
+    },
+    {
+      "item": "minecraft:raw_copper"
+    },
+    {
+      "item": "minecraft:raw_copper"
+    },
+    {
+      "item": "minecraft:raw_copper"
+    },
+    {
+      "item": "minecraft:raw_copper"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "regenerating_world:copsten_blend"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "required": true,
+  "package": "net.happyspeed.regenerating_world.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "BlockStatePropertiesMixin",
+    "ComposterBlockMixin",
+    "CropBlockMixin",
+    "FallingBlockEntityMixin",
+    "LanternBlockMixin",
+    "LeavesBlockMixin",
+    "LivingEntityMixin",
+    "PlayerMixin",
+    "ReduceExhaustionMixin",
+    "SaplingBlockMixin",
+    "ShieldDelayMixin",
+    "ShieldMixin",
+    "TntMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "overwrites": {
+    "requireAnnotations": true
+  },
+  "client": [
+    "MixinMultiPlayerGameMode"
+  ]
+}

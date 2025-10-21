@@ -1,0 +1,16 @@
+{
+  "name": "Who Am I?",
+  "icon": "minecraft:bone",
+  "category": "regenerating_world:world_state_info",
+  "sortnum": 1,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "How am I supposed to know that? $(br)John Book can't read minds! $(br2)$(o)Ironically, I can't even read.$()"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Well I do know a few things about you. $(br)You are the restorer, $(playername)! $(br)If you want to be of course. $(br)The whole world is depending on you though!"
+    }
+  ]
+}

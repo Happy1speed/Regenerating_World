@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "regenerating_world:silt_sea",
+    "regenerating_world:silt_river",
+    "regenerating_world:silt_swale"
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "processors": [
+    {
+      "processor_type": "minecraft:protected_blocks",
+      "value": "#regenerating_world:terrain_clip_protected"
+    }
+  ]
+}

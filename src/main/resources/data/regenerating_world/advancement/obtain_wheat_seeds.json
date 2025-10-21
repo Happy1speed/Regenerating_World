@@ -1,0 +1,29 @@
+{
+  "criteria": {
+    "got_wheat_seeds": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": ["minecraft:wheat_seeds"]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    ["got_wheat_seeds"]
+  ],
+  "display": {
+    "icon": { "item": "minecraft:wheat_seeds" },
+    "title": { "text": "Discover Wheat Seeds" },
+    "description": { "text": "Obtain Wheat Seeds. Grass can now be bonemealed." },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "rewards": {
+    "function": "regenerating_world:on_wheat_seeds_obtained"
+  }
+}

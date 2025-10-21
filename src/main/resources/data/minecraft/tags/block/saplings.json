@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "regenerating_world:swamp_oak_sapling",
+    "regenerating_world:fancy_oak_sapling",
+    "regenerating_world:overgrowth_oak_sapling",
+    "regenerating_world:bush_oak_sapling"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "criteria": {
+    "crafted_book": {
+      "trigger": "minecraft:recipe_crafted",
+      "conditions": {
+        "recipe_id": "regenerating_world:guide_book"
+      }
+    }
+  },
+  "rewards": {
+    "function": "regenerating_world:give_book"
+  }
+}

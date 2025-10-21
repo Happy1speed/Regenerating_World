@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "minecraft:coarse_dirt"
+    },
+    "Y": {
+      "item": "minecraft:clay"
+    }
+  },
+  "pattern": [
+    "###",
+    "#Y#",
+    "###"
+  ],
+  "result": {
+    "count": 1,
+    "id": "regenerating_world:origin_point"
+  }
+}

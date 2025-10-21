@@ -1,0 +1,24 @@
+{
+  "name": "Hard Amber Armor",
+  "icon": "regenerating_world:hardened_amber_helmet",
+  "category": "regenerating_world:getting_started",
+  "sortnum": 10,
+  "pages": [
+    {
+      "type": "patchouli:crafting",
+      "recipe": "regenerating_world:hardened_amber_ingot",
+      "title": "Hardened Amber Ingot",
+      "text" : "Amber can be combined with magma blocks to make hardened amber ingots, which will better suit a good set of armor! $(br)This new set of armor increases your movement speed."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "regenerating_world:hardened_amber_helmet",
+      "recipe2": "regenerating_world:hardened_amber_chestplate"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "regenerating_world:hardened_amber_leggings",
+      "recipe2": "regenerating_world:hardened_amber_boots"
+    }
+  ]
+}

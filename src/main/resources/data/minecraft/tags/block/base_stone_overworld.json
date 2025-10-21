@@ -1,0 +1,8 @@
+{
+  "replace" : true,
+  "values": [
+    "regenerating_world:weathered_stone",
+    "minecraft:andesite",
+    "minecraft:deepslate"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "regenerating_world:block/weathered_sand"
+      },
+      {
+        "model": "regenerating_world:block/weathered_sand",
+        "y": 90
+      },
+      {
+        "model": "regenerating_world:block/weathered_sand",
+        "y": 180
+      },
+      {
+        "model": "regenerating_world:block/weathered_sand",
+        "y": 270
+      }
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "regenerating_world:block/cable_bundle_horizontal",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "regenerating_world:block/cable_bundle"
+    },
+    "axis=z": {
+      "model": "regenerating_world:block/cable_bundle_horizontal",
+      "x": 90
+    }
+  }
+}

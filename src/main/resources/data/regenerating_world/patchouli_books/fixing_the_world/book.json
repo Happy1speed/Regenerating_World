@@ -1,0 +1,12 @@
+{
+  "name": "Fixing The World",
+  "landing_text": "Wowie! This world is not in a good state! Want to fix it?",
+  "version": 1,
+  "creative_tab": "minecraft:tools_and_utilities",
+  "model": "patchouli:book_cyan",
+  "show_progress": false,
+  "use_blocky_font": true,
+  "nameplate_color": "922F1D",
+  "text_overflow_mode": "resize",
+  "use_resource_pack": true
+}

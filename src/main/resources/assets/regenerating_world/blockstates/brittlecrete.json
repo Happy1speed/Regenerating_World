@@ -1,0 +1,18 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "regenerating_world:block/brittlecrete_1"
+      },
+      {
+        "model": "regenerating_world:block/brittlecrete_2"
+      },
+      {
+        "model": "regenerating_world:block/brittlecrete_3"
+      },
+      {
+        "model": "regenerating_world:block/brittlecrete_4"
+      }
+    ]
+  }
+}

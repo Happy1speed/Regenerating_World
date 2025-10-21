@@ -1,0 +1,4 @@
+{
+  "type": "minecraft:interpolated",
+  "argument": "regenerating_world:terrain_blend_components"
+}

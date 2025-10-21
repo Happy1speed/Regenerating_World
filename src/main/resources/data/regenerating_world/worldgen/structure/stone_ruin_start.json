@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:jigsaw",
+  "start_pool": "regenerating_world:stone_ruins_head",
+  "biomes": "#regenerating_world:is_biome",
+  "step": "surface_structures",
+  "spawn_overrides": {},
+  "terrain_adaptation": "none",
+  "start_height": {
+    "absolute": -12
+  },
+  "project_start_to_heightmap": "WORLD_SURFACE_WG",
+  "use_expansion_hack": false,
+  "size": 7,
+  "max_distance_from_center": 120,
+  "liquid_settings": "ignore_waterlogging"
+}

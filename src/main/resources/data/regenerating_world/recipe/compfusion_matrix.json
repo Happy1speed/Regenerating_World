@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "regenerating_world:hardened_amber_ingot"
+    },
+    "S": {
+      "item": "minecraft:oxidized_copper"
+    },
+    "B": {
+      "item": "regenerating_world:tungsten"
+    }
+  },
+  "pattern": [
+    "###",
+    "BSB",
+    "BSB"
+  ],
+  "result": {
+    "id": "regenerating_world:compfusion_matrix"
+  }
+}

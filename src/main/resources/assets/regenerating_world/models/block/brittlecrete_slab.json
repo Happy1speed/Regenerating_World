@@ -1,0 +1,8 @@
+{
+  "parent": "block/slab",
+  "textures": {
+    "bottom": "regenerating_world:block/brittlecrete_2",
+    "top": "regenerating_world:block/brittlecrete_2",
+    "side": "regenerating_world:block/brittlecrete_2"
+  }
+}

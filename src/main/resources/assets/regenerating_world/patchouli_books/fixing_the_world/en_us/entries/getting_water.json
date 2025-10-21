@@ -1,0 +1,22 @@
+{
+  "name": "Getting Water",
+  "icon": "regenerating_world:clay_water_bucket",
+  "category": "regenerating_world:getting_started",
+  "sortnum": 2,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Clay can be smelted into bricks. $(br)Now you can make a clay bucket! $(br)Clay buckets can only hold water."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "regenerating_world:clay_bucket,regenerating_world:clay_water_bucket",
+      "title": "Clay Bucket"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "regenerating_world:clay_bucket",
+      "title": "Clay Bucket"
+    }
+  ]
+}

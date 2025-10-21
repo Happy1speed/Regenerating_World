@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "regenerating_world:hardened_amber_ingot"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    },
+    "V": {
+      "item": "regenerating_world:tungsten_ingot"
+    }
+  },
+  "pattern": [
+    "V#V",
+    "VSV",
+    " S "
+  ],
+  "result": {
+    "id": "regenerating_world:exact_shovel"
+  }
+}

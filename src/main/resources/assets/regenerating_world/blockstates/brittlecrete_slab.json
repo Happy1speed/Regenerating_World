@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "type=bottom": { "model": "regenerating_world:block/brittlecrete_slab" },
+    "type=top": { "model": "regenerating_world:block/brittlecrete_slab_top" },
+    "type=double": { "model": "regenerating_world:block/brittlecrete_2" }
+  }
+}

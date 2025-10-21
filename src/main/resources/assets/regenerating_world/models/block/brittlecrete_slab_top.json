@@ -1,0 +1,17 @@
+{
+  "parent": "block/slab_top",
+  "textures": {
+    "bottom": "regenerating_world:block/brittlecrete_2",
+    "top": "regenerating_world:block/brittlecrete_2",
+    "side": "regenerating_world:block/brittlecrete_2"
+  }
+}
+{
+  "parent": "block/slab_top",
+  "textures": {
+    "bottom": "yourmodid:block/my_block",
+    "top":    "yourmodid:block/my_block",
+    "side":   "yourmodid:block/my_block"
+  }
+}
+

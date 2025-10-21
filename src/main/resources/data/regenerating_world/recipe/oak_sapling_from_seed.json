@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "regenerating_world:oak_seed"
+    },
+    {
+      "item": "regenerating_world:clay_water_bucket"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:oak_sapling"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "regenerating_world:block/spruce_sap_liquid_block"
+    }
+  }
+}

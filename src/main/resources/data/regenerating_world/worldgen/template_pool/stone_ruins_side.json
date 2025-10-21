@@ -1,0 +1,70 @@
+{
+  "name": "regenerating_world:stone_ruins_side",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 5,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "regenerating_world:stone_ruins/stone_ruin_hall_2",
+        "processors": "regenerating_world:cutoff_terrain",
+        "projection": "rigid"
+      }
+    },
+    {
+      "weight": 5,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "regenerating_world:stone_ruins/stone_ruin_hall_1",
+        "processors": "regenerating_world:cutoff_terrain",
+        "projection": "rigid"
+      }
+    },
+    {
+      "weight": 5,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "regenerating_world:stone_ruins/stone_ruin_core_1",
+        "processors": "regenerating_world:cutoff_terrain",
+        "projection": "rigid"
+      }
+    },
+    {
+      "weight": 5,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "regenerating_world:stone_ruins/stone_ruin_core_2",
+        "processors": "regenerating_world:cutoff_terrain",
+        "projection": "rigid"
+      }
+    },
+    {
+      "weight": 5,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "regenerating_world:stone_ruins/stone_ruin_cross_1",
+        "processors": "regenerating_world:cutoff_terrain",
+        "projection": "rigid"
+      }
+    },
+    {
+      "weight": 2,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "regenerating_world:stone_ruins/stone_ruin_core_3",
+        "processors": "regenerating_world:cutoff_terrain",
+        "projection": "rigid"
+      }
+    },
+    {
+      "weight": 2,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "regenerating_world:stone_ruins/stone_ruin_core_4",
+        "processors": "regenerating_world:cutoff_terrain",
+        "projection": "rigid"
+      }
+    }
+  ]
+}
+
