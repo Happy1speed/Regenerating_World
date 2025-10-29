@@ -13,15 +13,23 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.IntegerProperty;
 
-public class MineralGrassBlock extends Block implements EntityBlock {
+import java.util.ArrayList;
+
+public class OrganismBlock extends Block implements EntityBlock {
 
 
     public static final IntegerProperty LEVEL = IntegerProperty.create("level", 0, 32);
 
+    ArrayList<Block> baseBlockList;
+    ArrayList<Block> surfaceBlockList;
+    ArrayList<Block> supportBlockList;
 
-    public MineralGrassBlock(Properties properties) {
+    public OrganismBlock(ArrayList<Block> baseBlockList, ArrayList<Block> surfaceBlockList, ArrayList<Block> supportBlockList, Properties properties) {
         super(properties);
         this.registerDefaultState(this.stateDefinition.any().setValue(LEVEL, 0));
+        this.baseBlockList = baseBlockList;
+        this.supportBlockList = supportBlockList;
+        this.surfaceBlockList = surfaceBlockList;
     }
 
     @Override
@@ -31,14 +39,15 @@ public class MineralGrassBlock extends Block implements EntityBlock {
 
     @Override
     public BlockEntity newBlockEntity(BlockPos pos, BlockState state) {
-        return new MineralGrassTickingEntity(pos, state);
+        return new OrganismBlockTickingEntity(pos, state);
     }
 
     @Override
     public <T extends BlockEntity> BlockEntityTicker<T> getTicker(Level level, BlockState state, BlockEntityType<T> type) {
-        return type == ModItems.MINERAL_GRASS_BLOCK_ENTITY.get() && !level.isClientSide
-            ? (lvl, pos, st, be) -> MineralGrassTickingEntity.tick(lvl, pos, st, (MineralGrassTickingEntity) be)
-            : null;
+        return type == ModItems.REPLICATOR_BLOCK_ENTITY.get() && !level.isClientSide
+                ? (lvl, pos, st, be) -> OrganismBlockTickingEntity.tick(lvl, pos, st, (OrganismBlockTickingEntity) be, baseBlockList, surfaceBlockList, supportBlockList)
+                : null;
     }
 
 }
+

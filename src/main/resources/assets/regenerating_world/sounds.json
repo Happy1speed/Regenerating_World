@@ -70,5 +70,11 @@
       { "name": "regenerating_world:metal_reverb_2", "stream": false }
     ],
     "subtitle": "subtitles.regenerating_world.metal_reverb_2"
+  },
+  "vine_boom": {
+    "sounds": [
+      { "name": "regenerating_world:vine_boom", "stream": false }
+    ],
+    "subtitle": "subtitles.regenerating_world.vine_boom"
   }
 }

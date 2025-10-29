@@ -18,7 +18,10 @@ version = mod_version
 group = mod_group_id
 
 repositories {
-    // Add here additional repositories if required by some of the dependencies below.
+    mavenCentral()
+    flatDir {
+        dirs 'local_libs'
+    }
 }
 
 base {
@@ -112,6 +115,7 @@ configurations {
 }
 
 dependencies {
+    compileOnly name: 'thrivingblocks-neo-1.0.0'
     // Example optional mod dependency with JEI
     // The JEI API is declared for compile time use, while the full JEI artifact is used at runtime
     // compileOnly "mezz.jei:jei-${mc_version}-common-api:${jei_version}"

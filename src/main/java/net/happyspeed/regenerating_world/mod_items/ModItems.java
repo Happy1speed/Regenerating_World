@@ -3,6 +3,7 @@ package net.happyspeed.regenerating_world.mod_items;
 import net.happyspeed.regenerating_world.RegeneratingWorld;
 import net.happyspeed.regenerating_world.mod_blocks.*;
 import net.happyspeed.regenerating_world.util.*;
+import net.happyspeed.thrivingblocks.block.ModBlocks;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -30,6 +31,8 @@ import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Optional;
 
 import static net.happyspeed.regenerating_world.RegeneratingWorld.MODID;
@@ -374,57 +377,86 @@ public class ModItems {
             .isSuffocating(ModItems::never)));
 
 
-    public static final DeferredBlock<Block> MINERAL_GRASS_BLOCK = BLOCKS.register("mineral_grass", () -> new MineralGrassBlock(BlockBehaviour.Properties.of().mapColor(MapColor.DIRT).sound(SoundType.GRAVEL).strength(1.5f).requiresCorrectToolForDrops()));
+    //public static final DeferredBlock<Block> MINERAL_GRASS_BLOCK = BLOCKS.register("mineral_grass", () -> new MineralGrassBlock(BlockBehaviour.Properties.of().mapColor(MapColor.DIRT).sound(SoundType.GRAVEL).strength(1.5f).requiresCorrectToolForDrops()));
+
+//    public static final DeferredItem<BlockItem> MINERAL_GRASS_BLOCK_ITEM = ITEMS.registerSimpleBlockItem("mineral_grass", MINERAL_GRASS_BLOCK);
+//
+//    public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<MineralGrassTickingEntity>> MINERAL_GRASS_BLOCK_ENTITY =
+//            BLOCK_ENTITY_TYPES.register("mineral_grass_block_entity",
+//                    () -> BlockEntityType.Builder.of(MineralGrassTickingEntity::new,MINERAL_GRASS_BLOCK.get()).build(null));
+
+
+    //THE FUTURE IS NOW OLD MAN
+
+    public static final DeferredBlock<Block> MINERAL_GRASS_BLOCK = BLOCKS.register("mineral_grass", () -> new OrganismBlock(
+            new ArrayList<Block>(Arrays.asList(Blocks.DIRT, Blocks.ROOTED_DIRT, Blocks.COARSE_DIRT)),
+            new ArrayList<Block>(Arrays.asList(Blocks.GRASS_BLOCK)),
+            new ArrayList<Block>(),
+            BlockBehaviour.Properties.of().mapColor(MapColor.DIRT).sound(SoundType.GRAVEL).strength(1.5f).requiresCorrectToolForDrops()));
 
     public static final DeferredItem<BlockItem> MINERAL_GRASS_BLOCK_ITEM = ITEMS.registerSimpleBlockItem("mineral_grass", MINERAL_GRASS_BLOCK);
 
-    public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<MineralGrassTickingEntity>> MINERAL_GRASS_BLOCK_ENTITY =
-            BLOCK_ENTITY_TYPES.register("mineral_grass_block_entity",
-                    () -> BlockEntityType.Builder.of(MineralGrassTickingEntity::new,MINERAL_GRASS_BLOCK.get()).build(null));
-
-    public static final DeferredBlock<Block> CLEAN_MINERAL_GRASS_BLOCK = BLOCKS.register("clean_mineral_grass", () -> new CleanMineralGrassBlock(BlockBehaviour.Properties.of().mapColor(MapColor.DIRT).sound(SoundType.GRAVEL).strength(1.5f).requiresCorrectToolForDrops()));
+    public static final DeferredBlock<Block> CLEAN_MINERAL_GRASS_BLOCK = BLOCKS.register("clean_mineral_grass", () -> new OrganismBlock(
+            new ArrayList<Block>(Arrays.asList(Blocks.DIRT)),
+            new ArrayList<Block>(Arrays.asList(Blocks.GRASS_BLOCK)),
+            new ArrayList<Block>(),
+            BlockBehaviour.Properties.of().mapColor(MapColor.DIRT).sound(SoundType.GRAVEL).strength(1.5f).requiresCorrectToolForDrops()));
 
     public static final DeferredItem<BlockItem> CLEAN_MINERAL_GRASS_BLOCK_ITEM = ITEMS.registerSimpleBlockItem("clean_mineral_grass", CLEAN_MINERAL_GRASS_BLOCK);
 
-    public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<CleanMineralGrassTickingEntity>> CLEAN_MINERAL_GRASS_BLOCK_ENTITY =
-            BLOCK_ENTITY_TYPES.register("clean_mineral_grass_block_entity",
-                    () -> BlockEntityType.Builder.of(CleanMineralGrassTickingEntity::new,CLEAN_MINERAL_GRASS_BLOCK.get()).build(null));
-
-
-    public static final DeferredBlock<Block> MINERAL_DIRT_BLOCK = BLOCKS.register("mineral_dirt", () -> new MineralDirtBlock(BlockBehaviour.Properties.of().mapColor(MapColor.DIRT).sound(SoundType.GRAVEL).strength(1.5f).requiresCorrectToolForDrops()));
+    public static final DeferredBlock<Block> MINERAL_DIRT_BLOCK = BLOCKS.register("mineral_dirt", () -> new OrganismBlock(
+            new ArrayList<Block>(Arrays.asList(Blocks.DIRT)),
+            new ArrayList<Block>(),
+            new ArrayList<Block>(),
+            BlockBehaviour.Properties.of().mapColor(MapColor.DIRT).sound(SoundType.GRAVEL).strength(1.5f).requiresCorrectToolForDrops()));
 
     public static final DeferredItem<BlockItem> MINERAL_DIRT_BLOCK_ITEM = ITEMS.registerSimpleBlockItem("mineral_dirt", MINERAL_DIRT_BLOCK);
 
-    public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<MineralDirtTickingEntity>> MINERAL_DIRT_BLOCK_ENTITY =
-            BLOCK_ENTITY_TYPES.register("mineral_dirt_block_entity",
-                    () -> BlockEntityType.Builder.of(MineralDirtTickingEntity::new,MINERAL_DIRT_BLOCK.get()).build(null));
-
-    public static final DeferredBlock<Block> MINERAL_SAND_BLOCK = BLOCKS.register("mineral_sand", () -> new MineralSandBlock(BlockBehaviour.Properties.of().mapColor(MapColor.SAND).sound(SoundType.SAND).strength(1.5f).requiresCorrectToolForDrops()));
+    public static final DeferredBlock<Block> MINERAL_SAND_BLOCK = BLOCKS.register("mineral_sand", () -> new OrganismBlock(
+            new ArrayList<Block>(Arrays.asList(Blocks.SAND)),
+            new ArrayList<Block>(),
+            new ArrayList<Block>(Arrays.asList(Blocks.SANDSTONE)),
+            BlockBehaviour.Properties.of().mapColor(MapColor.SAND).sound(SoundType.SAND).strength(1.5f).requiresCorrectToolForDrops()));
 
     public static final DeferredItem<BlockItem> MINERAL_SAND_BLOCK_ITEM = ITEMS.registerSimpleBlockItem("mineral_sand", MINERAL_SAND_BLOCK);
 
-    public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<MineralSandTickingEntity>> MINERAL_SAND_BLOCK_ENTITY =
-            BLOCK_ENTITY_TYPES.register("mineral_sand_block_entity",
-                    () -> BlockEntityType.Builder.of(MineralSandTickingEntity::new,MINERAL_SAND_BLOCK.get()).build(null));
 
-    public static final DeferredBlock<Block> MINERAL_MUD_BLOCK = BLOCKS.register("mineral_mud", () -> new MineralMudBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_BROWN).sound(SoundType.MUD).strength(1.5f).requiresCorrectToolForDrops()));
+    public static final DeferredBlock<Block> MINERAL_MUD_BLOCK = BLOCKS.register("mineral_mud", () -> new OrganismBlock(
+            new ArrayList<Block>(Arrays.asList(Blocks.MUD)),
+            new ArrayList<Block>(),
+            new ArrayList<Block>(),
+            BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_BROWN).sound(SoundType.MUD).strength(1.5f).requiresCorrectToolForDrops()));
 
     public static final DeferredItem<BlockItem> MINERAL_MUD_BLOCK_ITEM = ITEMS.registerSimpleBlockItem("mineral_mud", MINERAL_MUD_BLOCK);
 
-    public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<MineralMudTickingEntity>> MINERAL_MUD_BLOCK_ENTITY =
-            BLOCK_ENTITY_TYPES.register("mineral_mud_block_entity",
-                    () -> BlockEntityType.Builder.of(MineralMudTickingEntity::new,MINERAL_MUD_BLOCK.get()).build(null));
-
-    public static final DeferredBlock<Block> MINERAL_PACKED_MUD_BLOCK = BLOCKS.register("mineral_packed_mud", () -> new MineralPackedMudBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_BROWN).sound(SoundType.PACKED_MUD).strength(1.5f).requiresCorrectToolForDrops()));
+    public static final DeferredBlock<Block> MINERAL_PACKED_MUD_BLOCK = BLOCKS.register("mineral_packed_mud", () -> new OrganismBlock(
+            new ArrayList<Block>(Arrays.asList(Blocks.PACKED_MUD)),
+            new ArrayList<Block>(),
+            new ArrayList<Block>(),
+            BlockBehaviour.Properties.of().mapColor(MapColor.RAW_IRON).sound(SoundType.PACKED_MUD).strength(1.5f).requiresCorrectToolForDrops()));
 
     public static final DeferredItem<BlockItem> MINERAL_PACKED_MUD_BLOCK_ITEM = ITEMS.registerSimpleBlockItem("mineral_packed_mud", MINERAL_PACKED_MUD_BLOCK);
 
-    public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<MineralPackedMudTickingEntity>> MINERAL_PACKED_MUD_BLOCK_ENTITY =
-            BLOCK_ENTITY_TYPES.register("mineral_packed_mud_block_entity",
-                    () -> BlockEntityType.Builder.of(MineralPackedMudTickingEntity::new,MINERAL_PACKED_MUD_BLOCK.get()).build(null));
+    public static final DeferredBlock<Block> MINERAL_FULL_GRASS_BLOCK = BLOCKS.register("mineral_full_grass", () -> new OrganismBlock(
+            new ArrayList<Block>(Arrays.asList(Blocks.DIRT)),
+            new ArrayList<Block>(Arrays.asList(ModBlocks.FULL_GRASS_BLOCK.get())),
+            new ArrayList<Block>(),
+            BlockBehaviour.Properties.of().mapColor(MapColor.RAW_IRON).sound(SoundType.PACKED_MUD).strength(1.5f).requiresCorrectToolForDrops()));
 
+    public static final DeferredItem<BlockItem> MINERAL_FULL_GRASS_BLOCK_ITEM = ITEMS.registerSimpleBlockItem("mineral_full_grass", MINERAL_FULL_GRASS_BLOCK);
 
-
+    public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<OrganismBlockTickingEntity>> REPLICATOR_BLOCK_ENTITY =
+            BLOCK_ENTITY_TYPES.register("replicator_block_entity",
+                    () -> BlockEntityType.Builder.of(OrganismBlockTickingEntity::new,
+                            MINERAL_GRASS_BLOCK.get(),
+                            CLEAN_MINERAL_GRASS_BLOCK.get(),
+                            MINERAL_DIRT_BLOCK.get(),
+                            MINERAL_SAND_BLOCK.get(),
+                            MINERAL_MUD_BLOCK.get(),
+                            MINERAL_PACKED_MUD_BLOCK.get(),
+                            MINERAL_FULL_GRASS_BLOCK.get()
+                            //Place for more mineral blocks
+                    ).build(null));
 
 
 
@@ -532,6 +564,14 @@ public class ModItems {
     public static final DeferredItem<VineBombItem> VINE_BOMB =
             ITEMS.register("vine_bomb",
                     () -> new VineBombItem(
+                            new Item.Properties()
+                    )
+            );
+
+    //Different from Vine Bomb
+    public static final DeferredItem<VineBoomItem> VINE_BOOM =
+            ITEMS.register("vine_boom",
+                    () -> new VineBoomItem(
                             new Item.Properties()
                     )
             );

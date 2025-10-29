@@ -1,7 +1,7 @@
 {
   "parent": "regenerating_world:block/overlay_cube",
   "textures": {
-    "all": "minecraft:block/sand",
+    "all": "minecraft:block/grass_block_top",
     "overlay": "regenerating_world:block/mineral_overlay"
   }
 }

@@ -23,6 +23,8 @@ public class ModSounds {
 
     public static final Supplier<SoundEvent> MYSTERY_ARP = registerSound("mystery_arp");
 
+    public static final Supplier<SoundEvent> VINE_BOOM = registerSound("vine_boom");
+
     public static final Supplier<SoundEvent> MUST_SEND_DATA_1 = registerSound("must_send_data_1");
     public static final Supplier<SoundEvent> MUST_SEND_DATA_2 = registerSound("must_send_data_2");
     public static final Supplier<SoundEvent> MUST_SEND_DATA_3 = registerSound("must_send_data_3");

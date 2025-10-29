@@ -84,7 +84,7 @@ import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 import java.util.*;
 import java.util.function.Supplier;
 
-// The value here should match an entry in the META-INF/neoforge.mods.toml file
+
 @Mod(RegeneratingWorld.MODID)
 public class RegeneratingWorld {
 
@@ -95,8 +95,6 @@ public class RegeneratingWorld {
 
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, MODID);
 
-
-    //Todo thriving blocks neoforge. (10% ported)
 
     // Creates a creative tab with the id "regenerating_world:example_tab" for the example item, that is placed after the combat tab
     public static final DeferredHolder<CreativeModeTab, CreativeModeTab> REGENERATING_WORLD_TAB = CREATIVE_MODE_TABS.register("regenerating_world_tab", () -> CreativeModeTab.builder()
@@ -147,7 +145,9 @@ public class RegeneratingWorld {
                 output.accept(ModItems.MINERAL_SAND_BLOCK_ITEM.get());
                 output.accept(ModItems.MINERAL_MUD_BLOCK_ITEM.get());
                 output.accept(ModItems.MINERAL_PACKED_MUD_BLOCK_ITEM.get());
+                output.accept(ModItems.MINERAL_FULL_GRASS_BLOCK_ITEM.get());
                 output.accept(ModItems.VINE_BOMB.get());
+                output.accept(ModItems.VINE_BOOM.get());
                 output.accept(ModItems.RESEED_STAFF.get());
                 output.accept(ModItems.FANCY_OAK_SAPLING_ITEM.get());
                 output.accept(ModItems.SWAMP_OAK_SAPLING_ITEM.get());

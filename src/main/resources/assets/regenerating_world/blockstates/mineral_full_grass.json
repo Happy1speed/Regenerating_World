@@ -1,0 +1,21 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "regenerating_world:block/mineral_full_grass"
+      },
+      {
+        "model": "regenerating_world:block/mineral_full_grass",
+        "y": 90
+      },
+      {
+        "model": "regenerating_world:block/mineral_full_grass",
+        "y": 180
+      },
+      {
+        "model": "regenerating_world:block/mineral_full_grass",
+        "y": 270
+      }
+    ]
+  }
+}

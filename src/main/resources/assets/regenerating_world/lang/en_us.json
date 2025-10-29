@@ -26,6 +26,7 @@
   "block.regenerating_world.mineral_sand": "Mineral Sand",
   "block.regenerating_world.mineral_mud": "Mineral Mud",
   "block.regenerating_world.mineral_packed_mud": "Mineral Packed Mud",
+  "block.regenerating_world.mineral_full_grass": "Mineral Full Grass Block",
   "item.regenerating_world.fern_light": "Fern Light",
   "item.regenerating_world.exact_shovel": "Exact Shovel",
   "item.regenerating_world.parched_dirt": "Parched Dirt",
@@ -79,6 +80,7 @@
   "item.regenerating_world.reseed_throwable": "Reseed Throwable",
   "item.regenerating_world.reseed_staff": "Reseed Staff",
   "item.regenerating_world.bone_mash_bundle": "Bone Mash Bundle",
+  "item.regenerating_world.vine_boom": "Vine Boom",
   "item.regenerating_world.biome_paintbrush": "Biome Paintbrush",
 
   "entity.regenerating_world.reseed_projectile": "Reseed Projectile",
@@ -90,17 +92,11 @@
   "subtitles.regenerating_world.must_send_data": "Send data attempt",
   "subtitles.regenerating_world.metal_reverb_1": "Metal clangs",
   "subtitles.regenerating_world.metal_reverb_2": "Metal clings",
+  "subtitles.regenerating_world.vine_boom": "-_-",
 
   "attribute.name.regenerating_world.air_mobility": "Air Mobility",
 
 
-  "regenerating_world.configuration.title": "Regenerating World Configs",
-  "regenerating_world.configuration.section.regenerating_world.common.toml": "Regenerating World Configs",
-  "regenerating_world.configuration.section.regenerating_world.common.toml.title": "Regenerating World Configs",
-  "regenerating_world.configuration.items": "Item List",
-  "regenerating_world.configuration.logDirtBlock": "Log Dirt Block",
-  "regenerating_world.configuration.magicNumberIntroduction": "Magic Number Text",
-  "regenerating_world.configuration.magicNumber": "Magic Number",
   "item.tooltip.origin_block": "Place this to set the World Spawn Point!",
   "item.tooltip.dry_item": "A dry item with great potential",
   "item.tooltip.vault_pole": "When near the ground, use to vault forward!",

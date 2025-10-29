@@ -1,6 +1,7 @@
 {
-  "parent": "minecraft:block/cube_all",
+  "parent": "regenerating_world:block/overlay_cube",
   "textures": {
-    "all": "regenerating_world:block/mineral_dirt"
+    "all": "minecraft:block/dirt",
+    "overlay": "regenerating_world:block/mineral_overlay"
   }
 }

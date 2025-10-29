@@ -8,15 +8,18 @@ import net.happyspeed.regenerating_world.network.SuperStructureSpawnDataClient;
 import net.happyspeed.regenerating_world.particles.AuraParticleProvider;
 import net.happyspeed.regenerating_world.particles.ModParticles;
 import net.happyspeed.regenerating_world.sounds.AmbientWindSoundHandler;
+import net.happyspeed.thrivingblocks.block.ModBlocks;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.player.LocalPlayer;
+import net.minecraft.client.renderer.BiomeColors;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
+import net.minecraft.world.level.GrassColor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.levelgen.structure.BoundingBox;
 import net.neoforged.api.distmarker.Dist;
@@ -59,6 +62,14 @@ public class RegeneratingWorldClient {
         ItemBlockRenderTypes.setRenderLayer(ModItems.TORN_SHEARMETAL_BLOCK.get(), RenderType.cutout());
         ItemBlockRenderTypes.setRenderLayer(ModItems.ARCHIVE_PORTAL_BLOCK.get(), RenderType.translucent());
         ItemBlockRenderTypes.setRenderLayer(ModItems.RETURN_PORTAL_BLOCK.get(), RenderType.translucent());
+
+        ItemBlockRenderTypes.setRenderLayer(ModItems.MINERAL_DIRT_BLOCK.get(), RenderType.cutout());
+        ItemBlockRenderTypes.setRenderLayer(ModItems.MINERAL_GRASS_BLOCK.get(), RenderType.cutout());
+        ItemBlockRenderTypes.setRenderLayer(ModItems.CLEAN_MINERAL_GRASS_BLOCK.get(), RenderType.cutout());
+        ItemBlockRenderTypes.setRenderLayer(ModItems.MINERAL_PACKED_MUD_BLOCK.get(), RenderType.cutout());
+        ItemBlockRenderTypes.setRenderLayer(ModItems.MINERAL_MUD_BLOCK.get(), RenderType.cutout());
+        ItemBlockRenderTypes.setRenderLayer(ModItems.MINERAL_SAND_BLOCK.get(), RenderType.cutout());
+        ItemBlockRenderTypes.setRenderLayer(ModItems.MINERAL_FULL_GRASS_BLOCK.get(), RenderType.cutout());
 
     }
 
@@ -142,5 +153,20 @@ public class RegeneratingWorldClient {
     public static void onRegisterRenderers(EntityRenderersEvent.RegisterRenderers event) {
         event.registerEntityRenderer(ModEntities.RESEED_PROJECTILE.get(), ReseedProjectileRenderer::new);
     }
+    @SubscribeEvent
+    public static void onBlockColor(RegisterColorHandlersEvent.Block event) {
+        event.register((state, world, pos, tintIndex) -> {
+            if (world != null && pos != null) {
+                return BiomeColors.getAverageGrassColor(world, pos);
+            }
+            return GrassColor.getDefaultColor();
+        },ModItems.MINERAL_FULL_GRASS_BLOCK.get());
+    }
+
+    @SubscribeEvent
+    public static void onItemColor(RegisterColorHandlersEvent.Item event) {
+        event.register((stack, tintIndex) -> GrassColor.getDefaultColor(), ModItems.MINERAL_FULL_GRASS_BLOCK_ITEM.get());
+    }
+
 
 }

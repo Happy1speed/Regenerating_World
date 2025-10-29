@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "regenerating_world:vine_bomb"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "regenerating_world:vine_boom"
+  }
+}
