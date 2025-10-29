@@ -139,6 +139,7 @@ public class RegeneratingWorld {
                 output.accept(ModItems.VAULT_POLE.get());
                 output.accept(ModItems.EXACT_SHOVEL.get());
                 output.accept(ModItems.FERN_LIGHT_BLOCK_ITEM.get());
+                output.accept(ModItems.NUTRIENTS_DEPOSIT_BLOCK_ITEM.get());
                 output.accept(ModItems.MINERAL_GRASS_BLOCK_ITEM.get());
                 output.accept(ModItems.CLEAN_MINERAL_GRASS_BLOCK_ITEM.get());
                 output.accept(ModItems.MINERAL_DIRT_BLOCK_ITEM.get());

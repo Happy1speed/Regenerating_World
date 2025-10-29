@@ -33,6 +33,7 @@ public class OrganismBlockTickingEntity extends BlockEntity {
             if (level instanceof ServerLevel serverLevel) {
 
                 Block baseBlock1;
+
                 if (!supportBlockList.isEmpty() && level.getBlockState(pos.below()).isAir()) {
                     baseBlock1 = supportBlockList.get(level.random.nextInt(supportBlockList.size()));
                 }
@@ -47,6 +48,7 @@ public class OrganismBlockTickingEntity extends BlockEntity {
 
                 level.setBlockAndUpdate(pos, baseBlock1.defaultBlockState());
 
+
                 if (!level.isAreaLoaded(pos, 2)) {
                     return;
                 }
@@ -56,6 +58,7 @@ public class OrganismBlockTickingEntity extends BlockEntity {
                             BlockPos adjacentPos = new BlockPos(pos.getX() + x, pos.getY() + y, pos.getZ() + z);
                             if (level.getBlockState(adjacentPos).is(ModTags.Blocks.REGENERATING_SURFACE_BLOCK_REPLACABLES)) {
                                 Block baseBlock2;
+
                                 if (!supportBlockList.isEmpty() && level.getBlockState(adjacentPos.below()).isAir()) {
                                     baseBlock2 = supportBlockList.get(level.random.nextInt(supportBlockList.size()));
                                 }
@@ -69,6 +72,7 @@ public class OrganismBlockTickingEntity extends BlockEntity {
                                 }
 
                                 level.setBlockAndUpdate(adjacentPos, baseBlock2.defaultBlockState());
+
 
                                 if (level.random.nextInt(10) == 1) {
                                     serverLevel.playSound(null, adjacentPos.getX(), adjacentPos.getY(), adjacentPos.getZ(),
@@ -95,12 +99,14 @@ public class OrganismBlockTickingEntity extends BlockEntity {
                     Direction randDirection = Direction.getRandom(level.random);
                     BlockPos adjacentPos = pos.relative(randDirection);
 
-                    if (state.getValue(LEVEL) < 32) {
+                    if (state.getValue(LEVEL) > 0) {
                         if (level.getBlockState(adjacentPos).is(ModTags.Blocks.REGENERATING_SURFACE_BLOCK_REPLACABLES)) {
 
                             level.setBlock(adjacentPos, state, 3);
 
-                            level.setBlockAndUpdate(adjacentPos, state.setValue(LEVEL, state.getValue(LEVEL) + 1));
+
+                            level.setBlockAndUpdate(adjacentPos, state.setValue(LEVEL, state.getValue(LEVEL) - 1));
+
                             if (level.random.nextInt(10) == 1) {
                                 serverLevel.playSound(null, adjacentPos.getX(), adjacentPos.getY(), adjacentPos.getZ(),
                                         SoundEvents.BONE_MEAL_USE, SoundSource.BLOCKS, 0.7F, 1.0F);
@@ -118,6 +124,5 @@ public class OrganismBlockTickingEntity extends BlockEntity {
             }
         }
     }
-
 }
 

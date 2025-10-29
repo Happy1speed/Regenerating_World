@@ -26,7 +26,7 @@ public class OrganismBlock extends Block implements EntityBlock {
 
     public OrganismBlock(ArrayList<Block> baseBlockList, ArrayList<Block> surfaceBlockList, ArrayList<Block> supportBlockList, Properties properties) {
         super(properties);
-        this.registerDefaultState(this.stateDefinition.any().setValue(LEVEL, 0));
+        this.registerDefaultState(this.stateDefinition.any().setValue(LEVEL, 32));
         this.baseBlockList = baseBlockList;
         this.supportBlockList = supportBlockList;
         this.surfaceBlockList = surfaceBlockList;

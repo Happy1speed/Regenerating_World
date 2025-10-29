@@ -377,16 +377,6 @@ public class ModItems {
             .isSuffocating(ModItems::never)));
 
 
-    //public static final DeferredBlock<Block> MINERAL_GRASS_BLOCK = BLOCKS.register("mineral_grass", () -> new MineralGrassBlock(BlockBehaviour.Properties.of().mapColor(MapColor.DIRT).sound(SoundType.GRAVEL).strength(1.5f).requiresCorrectToolForDrops()));
-
-//    public static final DeferredItem<BlockItem> MINERAL_GRASS_BLOCK_ITEM = ITEMS.registerSimpleBlockItem("mineral_grass", MINERAL_GRASS_BLOCK);
-//
-//    public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<MineralGrassTickingEntity>> MINERAL_GRASS_BLOCK_ENTITY =
-//            BLOCK_ENTITY_TYPES.register("mineral_grass_block_entity",
-//                    () -> BlockEntityType.Builder.of(MineralGrassTickingEntity::new,MINERAL_GRASS_BLOCK.get()).build(null));
-
-
-    //THE FUTURE IS NOW OLD MAN
 
     public static final DeferredBlock<Block> MINERAL_GRASS_BLOCK = BLOCKS.register("mineral_grass", () -> new OrganismBlock(
             new ArrayList<Block>(Arrays.asList(Blocks.DIRT, Blocks.ROOTED_DIRT, Blocks.COARSE_DIRT)),
@@ -438,8 +428,8 @@ public class ModItems {
     public static final DeferredItem<BlockItem> MINERAL_PACKED_MUD_BLOCK_ITEM = ITEMS.registerSimpleBlockItem("mineral_packed_mud", MINERAL_PACKED_MUD_BLOCK);
 
     public static final DeferredBlock<Block> MINERAL_FULL_GRASS_BLOCK = BLOCKS.register("mineral_full_grass", () -> new OrganismBlock(
-            new ArrayList<Block>(Arrays.asList(Blocks.DIRT)),
             new ArrayList<Block>(Arrays.asList(ModBlocks.FULL_GRASS_BLOCK.get())),
+            new ArrayList<Block>(),
             new ArrayList<Block>(),
             BlockBehaviour.Properties.of().mapColor(MapColor.RAW_IRON).sound(SoundType.PACKED_MUD).strength(1.5f).requiresCorrectToolForDrops()));
 
@@ -658,5 +648,9 @@ public class ModItems {
     public static final DeferredBlock<Block> WEATHERED_STONE_BRICKS_BLOCK = BLOCKS.registerSimpleBlock("weathered_stone_bricks", BlockBehaviour.Properties.of().mapColor(MapColor.STONE).sound(SoundType.STONE).strength(1.5f));
 
     public static final DeferredItem<BlockItem> WEATHERED_STONE_BRICKS_BLOCK_ITEM = ITEMS.registerSimpleBlockItem("weathered_stone_bricks", WEATHERED_STONE_BRICKS_BLOCK);
+
+    public static final DeferredBlock<Block> NUTRIENTS_DEPOSIT_BLOCK = BLOCKS.registerSimpleBlock("nutrients_deposit_block", BlockBehaviour.Properties.of().mapColor(MapColor.DIRT).sound(SoundType.PACKED_MUD).strength(1.5f).requiresCorrectToolForDrops());
+
+    public static final DeferredItem<BlockItem> NUTRIENTS_DEPOSIT_BLOCK_ITEM = ITEMS.registerSimpleBlockItem("nutrients_deposit_block", NUTRIENTS_DEPOSIT_BLOCK);
 
 }
