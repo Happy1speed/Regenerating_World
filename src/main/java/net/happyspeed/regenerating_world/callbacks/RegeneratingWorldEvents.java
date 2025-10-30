@@ -365,12 +365,12 @@ public class RegeneratingWorldEvents {
 
         if (level.getGameTime() % 40 == 0) {
             for (BoundingBox boundingBox : SuperStructureSpawnData.get(level).getBoxes()) {
-                if (level.random.nextInt(299) == 0) {
+                if (level.random.nextInt(199) == 0) {
                     boolean soundPlayed = false;
                     for (ServerPlayer player : level.players()) {
                         if (!soundPlayed) {
                             BlockPos boxPos = getRandomPosInBox(boundingBox, level.random);
-                            if (player.position().distanceTo(boxPos.getCenter()) > 20 && player.position().distanceTo(boxPos.getCenter()) < 100) {
+                            if (player.position().distanceTo(boxPos.getCenter()) > 20 && player.position().distanceTo(boxPos.getCenter()) < 100 && player.getOnPos().getY() < 140) {
                                 int randSound = level.random.nextInt(4);
                                 if (randSound == 0) {
                                     player.level().playSound(
@@ -378,7 +378,7 @@ public class RegeneratingWorldEvents {
                                             player.blockPosition(),
                                             ModSounds.HUGE_IMPACT.get(),
                                             SoundSource.WEATHER,
-                                            5.0F,
+                                            3.0F,
                                             Math.max(0.7f, level.random.nextFloat())
                                     );
                                 }
@@ -388,7 +388,7 @@ public class RegeneratingWorldEvents {
                                             player.blockPosition(),
                                             ModSounds.METAL_REVERB_1.get(),
                                             SoundSource.WEATHER,
-                                            5.0F,
+                                            3.0F,
                                             Math.max(0.7f, level.random.nextFloat())
                                     );
                                 }
@@ -398,7 +398,7 @@ public class RegeneratingWorldEvents {
                                             player.blockPosition(),
                                             ModSounds.METAL_REVERB_2.get(),
                                             SoundSource.WEATHER,
-                                            5.0F,
+                                            3.0F,
                                             Math.max(0.7f, level.random.nextFloat())
                                     );
                                 }
@@ -408,7 +408,7 @@ public class RegeneratingWorldEvents {
                                             player.blockPosition(),
                                             ModSounds.MYSTERY_ARP.get(),
                                             SoundSource.WEATHER,
-                                            5.0F,
+                                            3.0F,
                                             Math.max(0.8f, level.random.nextFloat())
                                     );
                                 }

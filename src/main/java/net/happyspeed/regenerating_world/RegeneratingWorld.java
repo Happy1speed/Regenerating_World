@@ -157,6 +157,7 @@ public class RegeneratingWorld {
                 output.accept(ModItems.COMPFUSION_MATRIX_BLOCK_ITEM.get());
                 output.accept(ModItems.GLIDER_HELMET_ITEM.get());
                 output.accept(ModItems.BIOME_PAINTBRUSH.get());
+                output.accept(ModItems.BIOME_PAINTBUCKET.get());
             }).build());
 
     public static final DeferredHolder<CreativeModeTab, CreativeModeTab> REGENERATING_WORLD_MIDGAME_TAB = CREATIVE_MODE_TABS.register("regenerating_world_midgame_tab", () -> CreativeModeTab.builder()

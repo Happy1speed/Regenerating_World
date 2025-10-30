@@ -589,6 +589,14 @@ public class ModItems {
                     )
             );
 
+    public static final DeferredItem<BiomePaintBucketItem> BIOME_PAINTBUCKET =
+            ITEMS.register("biome_paint_bucket",
+                    () -> new BiomePaintBucketItem(
+                            new Item.Properties()
+                                    .stacksTo(1)
+                    )
+            );
+
     public static final DeferredBlock<Block> SHEARMETAL_BLOCK = BLOCKS.registerSimpleBlock("shearmetal_block", BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_GRAY).sound(ModSoundTypes.METALIC_BLOCK).strength(1.5f).requiresCorrectToolForDrops());
 
     public static final DeferredItem<BlockItem> SHEARMETAL_BLOCK_ITEM = ITEMS.registerSimpleBlockItem("shearmetal_block", SHEARMETAL_BLOCK);
