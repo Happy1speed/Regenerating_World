@@ -186,6 +186,14 @@ public class RegeneratingWorldEvents {
         if (stack.getItem() == ModItems.BIOME_PAINTBRUSH.get()) {
             event.getToolTip().add(Component.translatable("item.tooltip.biome_paintbrush"));
         }
+
+        if (stack.getItem() == ModItems.BIOME_PAINTBUCKET.get()) {
+            event.getToolTip().add(Component.translatable("item.tooltip.biome_paintbucket"));
+        }
+
+        if (stack.getItem() == ModItems.FERN_LIGHT_BLOCK_ITEM.get()) {
+            event.getToolTip().add(Component.translatable("item.tooltip.fern_light"));
+        }
     }
 
     @SubscribeEvent

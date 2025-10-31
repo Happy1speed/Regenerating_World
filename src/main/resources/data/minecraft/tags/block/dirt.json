@@ -1,5 +1,7 @@
 {
-  "values": [],
+  "values": [
+    "regenerating_world:fern_light"
+  ],
   "remove": [
     "minecraft:coarse_dirt"
   ]

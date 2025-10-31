@@ -1,6 +1,21 @@
-{
-  "parent": "minecraft:block/cube_all",
+{   "parent": "block/block",
   "textures": {
-    "all": "regenerating_world:block/fern_light"
-  }
+    "particle": "regenerating_world:block/fern_grow_light_side",
+    "bottom": "regenerating_world:block/fern_grow_light_bottom",
+    "top": "regenerating_world:block/fern_light_top",
+    "side": "regenerating_world:block/fern_grow_light_side"
+  },
+  "elements": [
+    {   "from": [ 0, 0, 0 ],
+      "to": [ 16, 16, 16 ],
+      "faces": {
+        "down":  { "uv": [ 0, 0, 16, 16 ], "texture": "#bottom", "cullface": "down" },
+        "up":    { "uv": [ 0, 0, 16, 16 ], "texture": "#top",    "cullface": "up" },
+        "north": { "uv": [ 0, 0, 16, 16 ], "texture": "#side",   "cullface": "north" },
+        "south": { "uv": [ 0, 0, 16, 16 ], "texture": "#side",   "cullface": "south" },
+        "west":  { "uv": [ 0, 0, 16, 16 ], "texture": "#side",   "cullface": "west" },
+        "east":  { "uv": [ 0, 0, 16, 16 ], "texture": "#side",   "cullface": "east" }
+      }
+    }
+  ]
 }

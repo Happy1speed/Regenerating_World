@@ -2,11 +2,14 @@
   "type": "regenerating_world:add_item",
   "conditions": [
     {
-      "block": "minecraft:large_fern",
-      "condition": "minecraft:block_state_property"
+      "condition": "minecraft:block_state_property",
+      "block": "minecraft:large_fern"
     }
   ],
-  "item": "minecraft:fern"
+  "item": "minecraft:fern",
+  "count": 4
 }
+
+
 
 

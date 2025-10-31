@@ -104,5 +104,7 @@
   "item.tooltip.vault_pole": "When near the ground, use to vault forward!",
   "item.tooltip.exact_shovel": "Break one block per click",
   "item.tooltip.grow_light": "Accelerates the growth of crops that are 2 blocks under it. (Inclusive)",
-  "item.tooltip.biome_paintbrush": "Sneak use to cycle through biomes, use on blocks to paint."
+  "item.tooltip.biome_paintbrush": "Sneak use to cycle through biomes, use on blocks to paint a small area.",
+  "item.tooltip.biome_paintbucket": "Sneak use to cycle through biomes, use on blocks to paint a large area.",
+  "item.tooltip.fern_light": "Grows ferns. Must be placed under Y level 10 and have decent skylight."
 }

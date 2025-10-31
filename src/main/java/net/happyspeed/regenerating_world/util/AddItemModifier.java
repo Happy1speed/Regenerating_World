@@ -1,5 +1,6 @@
 package net.happyspeed.regenerating_world.util;
 
+import com.mojang.serialization.Codec;
 import com.mojang.serialization.MapCodec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
 import it.unimi.dsi.fastutil.objects.ObjectArrayList;
@@ -13,23 +14,30 @@ import net.neoforged.neoforge.common.loot.LootModifier;
 
 public class AddItemModifier extends LootModifier {
     public static final MapCodec<AddItemModifier> CODEC = RecordCodecBuilder.mapCodec(inst ->
-            LootModifier.codecStart(inst).and(
-                    BuiltInRegistries.ITEM.byNameCodec().fieldOf("item").forGetter(e -> e.item)).apply(inst, AddItemModifier::new));
-    private final Item item;
+            LootModifier.codecStart(inst)
+                    .and(BuiltInRegistries.ITEM.byNameCodec().fieldOf("item").forGetter(e -> e.item))
+                    .and(Codec.INT.fieldOf("count").forGetter(e -> e.count))
+                    .apply(inst, AddItemModifier::new)
+    );
 
-    public AddItemModifier(LootItemCondition[] conditionsIn, Item item) {
+
+    private final Item item;
+    private final int count;
+
+    public AddItemModifier(LootItemCondition[] conditionsIn, Item item, int count) {
         super(conditionsIn);
         this.item = item;
+        this.count = count;
     }
 
     @Override
     protected ObjectArrayList<ItemStack> doApply(ObjectArrayList<ItemStack> generatedLoot, LootContext lootContext) {
         for (LootItemCondition condition : this.conditions) {
-            if(!condition.test(lootContext)) {
+            if (!condition.test(lootContext)) {
                 return generatedLoot;
             }
         }
-        generatedLoot.add(new ItemStack(this.item));
+        generatedLoot.add(new ItemStack(this.item, this.count));
         return generatedLoot;
     }
 
